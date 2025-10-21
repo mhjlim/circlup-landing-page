@@ -50,8 +50,9 @@ const ComingSoon = () => {
         <div className="space-y-4 animate-in slide-in-from-bottom-4 duration-1000 delay-200">
           <h1 className="text-5xl md:text-7xl font-bold text-foreground tracking-tight">Coming Soon</h1>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-lg mx-auto">
-            Something exciting is on the way. Be the first to know when we launch.
+            Something exciting is on the way.{" "}
           </p>
+          <p> Be the first to know when we launch.</p>
         </div>
 
         {/* Email Form */}
