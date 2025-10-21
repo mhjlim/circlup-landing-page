@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { toast } from "@/hooks/use-toast";
+import { Instagram } from "lucide-react";
 import circlupLogo from "@/assets/circlup-logo.png";
 
 const ComingSoon = () => {
@@ -41,7 +42,7 @@ const ComingSoon = () => {
           <img 
             src={circlupLogo} 
             alt="Circlup Logo" 
-            className="h-24 md:h-32 w-auto drop-shadow-lg animate-in zoom-in duration-700"
+            className="h-60 md:h-80 w-auto drop-shadow-lg animate-in zoom-in duration-700"
           />
         </div>
 
@@ -81,6 +82,17 @@ const ComingSoon = () => {
         <p className="text-sm text-muted-foreground/60 animate-in fade-in duration-1000 delay-1000">
           We respect your privacy. Unsubscribe at any time.
         </p>
+
+        {/* Instagram Link */}
+        <a 
+          href="https://instagram.com/letscircleup"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors duration-300 animate-in fade-in duration-1000 delay-1200"
+        >
+          <Instagram className="w-5 h-5" />
+          <span className="text-sm">Follow us on Instagram</span>
+        </a>
       </div>
     </div>
   );
