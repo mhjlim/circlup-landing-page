@@ -11,7 +11,7 @@ const ComingSoon = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!email || !email.includes("@")) {
       toast({
         title: "Invalid email",
@@ -22,7 +22,7 @@ const ComingSoon = () => {
     }
 
     setIsSubmitting(true);
-    
+
     // Simulate API call
     setTimeout(() => {
       toast({
@@ -39,25 +39,23 @@ const ComingSoon = () => {
       <div className="w-full max-w-2xl text-center space-y-12 pb-16 animate-in fade-in duration-1000">
         {/* Logo */}
         <div className="flex justify-center">
-          <img 
-            src={circlupLogo} 
-            alt="Circlup Logo" 
+          <img
+            src={circlupLogo}
+            alt="Circlup Logo"
             className="h-60 md:h-80 w-auto drop-shadow-lg animate-in zoom-in duration-700"
           />
         </div>
 
         {/* Heading */}
         <div className="space-y-4 animate-in slide-in-from-bottom-4 duration-1000 delay-200">
-          <h1 className="text-5xl md:text-7xl font-bold text-foreground tracking-tight">
-            Coming Soon
-          </h1>
+          <h1 className="text-5xl md:text-7xl font-bold text-foreground tracking-tight">Coming Soon</h1>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-lg mx-auto">
             Something exciting is on the way. Be the first to know when we launch.
           </p>
         </div>
 
         {/* Email Form */}
-        <form 
+        <form
           onSubmit={handleSubmit}
           className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto animate-in slide-in-from-bottom-4 duration-1000 delay-500"
         >
@@ -69,7 +67,7 @@ const ComingSoon = () => {
             className="flex-1 h-12 text-base bg-card border-2 border-border focus:border-primary transition-all duration-300 shadow-sm"
             disabled={isSubmitting}
           />
-          <Button 
+          <Button
             type="submit"
             disabled={isSubmitting}
             className="h-12 px-8 bg-primary hover:bg-secondary text-primary-foreground font-semibold shadow-lg hover:shadow-[var(--shadow-glow)] transition-all duration-300 hover:scale-105"
@@ -84,7 +82,7 @@ const ComingSoon = () => {
         </p>
 
         {/* Instagram Link */}
-        <a 
+        <a
           href="https://instagram.com/letscircleup"
           target="_blank"
           rel="noopener noreferrer"
