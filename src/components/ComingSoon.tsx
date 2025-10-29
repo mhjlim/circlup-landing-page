@@ -84,7 +84,7 @@ const ComingSoon = () => {
 
         {/* Instagram Link */}
         <a
-          href="https://instagram.com/letscircleup"
+          href="https://instagram.com/circlup.app"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors duration-300 animate-in fade-in duration-1000 delay-1200"
