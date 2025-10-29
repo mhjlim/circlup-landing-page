@@ -67,7 +67,7 @@ const ComingSoon = () => {
 
         {/* Heading */}
         <div className="space-y-4 animate-in slide-in-from-bottom-4 duration-1000 delay-200">
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight font-poppins">Coming Soon</h1>
+          <h1 className="text-4xl md:text-5xl text-foreground tracking-tight font-poppins">Coming Soon</h1>
           <p className="text-xl md:text-2xl text-yellow max-w-lg mx-auto font-poppins font-semibold">
             Something exciting is on the way.{" "}
           </p>
