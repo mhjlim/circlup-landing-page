@@ -87,21 +87,32 @@ export default {
             height: "0",
           },
         },
-        "bounce-high": {
-          "0%, 100%": {
-            transform: "translateY(0)",
-            animationTimingFunction: "cubic-bezier(0.8, 0, 1, 1)",
+        "bounce-natural": {
+          "0%": {
+            transform: "translateY(0) translateX(0)",
+            animationTimingFunction: "cubic-bezier(0.33, 1, 0.68, 1)",
+          },
+          "25%": {
+            transform: "translateY(-40px) translateX(5px)",
+            animationTimingFunction: "cubic-bezier(0.32, 0, 0.67, 0)",
           },
           "50%": {
-            transform: "translateY(-50px)",
-            animationTimingFunction: "cubic-bezier(0, 0, 0.2, 1)",
+            transform: "translateY(0) translateX(10px)",
+            animationTimingFunction: "cubic-bezier(0.33, 1, 0.68, 1)",
+          },
+          "75%": {
+            transform: "translateY(-40px) translateX(5px)",
+            animationTimingFunction: "cubic-bezier(0.32, 0, 0.67, 0)",
+          },
+          "100%": {
+            transform: "translateY(0) translateX(0)",
           },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "bounce-high": "bounce-high 1s infinite",
+        "bounce-natural": "bounce-natural 2s infinite",
       },
     },
   },
