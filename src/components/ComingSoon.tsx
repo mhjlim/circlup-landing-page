@@ -73,7 +73,7 @@ const ComingSoon = () => {
         <div className="flex justify-center">
           <img
             src={circlupLogo}
-            alt="Circlup Logo"
+            alt="CirclUp Logo"
             className="h-[118px] md:h-[157px] w-auto drop-shadow-lg animate-in zoom-in duration-700"
           />
         </div>
