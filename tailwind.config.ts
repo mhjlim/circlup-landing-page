@@ -57,6 +57,13 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        yellow: {
+          DEFAULT: "hsl(48, 100%, 50%)",
+          light: "hsl(48, 100%, 60%)",
+        },
+      },
+      fontFamily: {
+        'poppins': ['Poppins', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",
