@@ -35,8 +35,17 @@ const ComingSoon = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-background to-muted/30 p-4">
-      <div className="w-full max-w-2xl text-center space-y-12 pb-16 animate-in fade-in duration-1000">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-background to-muted/30 p-4 relative overflow-hidden">
+      {/* Animated Background Dots */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-1/4 left-1/4 w-3 h-3 rounded-full bg-primary/20 animate-[bounce_3s_ease-in-out_infinite]" />
+        <div className="absolute top-1/3 right-1/3 w-2 h-2 rounded-full bg-primary/30 animate-[bounce_4s_ease-in-out_infinite_0.5s]" />
+        <div className="absolute bottom-1/3 left-1/3 w-2.5 h-2.5 rounded-full bg-primary/25 animate-[bounce_3.5s_ease-in-out_infinite_1s]" />
+        <div className="absolute top-2/3 right-1/4 w-3 h-3 rounded-full bg-secondary/20 animate-[bounce_4.5s_ease-in-out_infinite_1.5s]" />
+        <div className="absolute bottom-1/4 right-1/2 w-2 h-2 rounded-full bg-primary/30 animate-[bounce_3.8s_ease-in-out_infinite_2s]" />
+      </div>
+      
+      <div className="w-full max-w-2xl text-center space-y-12 pb-16 animate-in fade-in duration-1000 relative z-10">
         {/* Logo */}
         <div className="flex justify-center">
           <img
