@@ -61,7 +61,7 @@ const ComingSoon = () => {
           <img
             src={circlupLogo}
             alt="Circlup Logo"
-            className="h-[168px] md:h-[224px] w-auto drop-shadow-lg animate-in zoom-in duration-700"
+            className="h-[118px] md:h-[157px] w-auto drop-shadow-lg animate-in zoom-in duration-700"
           />
         </div>
 
