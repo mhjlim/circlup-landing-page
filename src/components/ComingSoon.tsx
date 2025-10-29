@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { toast } from "@/hooks/use-toast";
 import { Instagram } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
 import circlupLogo from "@/assets/circlup-logo.png";
 
 const ComingSoon = () => {
@@ -23,15 +24,27 @@ const ComingSoon = () => {
 
     setIsSubmitting(true);
 
-    // Simulate API call
-    setTimeout(() => {
+    try {
+      const { error } = await supabase
+        .from("email_signups")
+        .insert([{ email }]);
+
+      if (error) throw error;
+
       toast({
         title: "You're on the list! 🎉",
         description: "We'll keep you posted on our launch.",
       });
       setEmail("");
+    } catch (error: any) {
+      toast({
+        title: "Error",
+        description: error.message || "Something went wrong. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   return (
