@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { toast } from "@/hooks/use-toast";
@@ -50,13 +49,6 @@ const ComingSoon = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-background to-muted/30 p-4 relative overflow-hidden">
-      {/* Admin Link */}
-      <Link
-        to="/auth"
-        className="fixed top-4 right-4 text-xs text-muted-foreground/40 hover:text-muted-foreground transition-colors z-20 font-poppins"
-      >
-        Admin
-      </Link>
       {/* Animated Background Dots */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-[10%] left-[15%] w-4 h-4 rounded-full bg-primary/20 animate-[bounce-natural_1.8s_ease-in-out_infinite]" />
